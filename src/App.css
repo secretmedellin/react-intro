@@ -1,41 +1,41 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.App-header {
-  background-color: white;
+/* .App-header {
+  background-color: rgb(92, 9, 111);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-}
+  color: rgb(72, 7, 113);
+} */
 
-.App-link {
-  color: #61dafb;
-}
+/* .App-link {
+  color: #e6141b;
+} */
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 .navbar {
   height: 100px;
@@ -43,31 +43,10 @@
 
 .navbar-brand {
   font-weight: 600;
-  border-bottom: 3px solid #ffcc01;
-  color: #ffcc01 !important;
+  border-bottom: 3px solid #b607d1;
+  color: #610ae3 !important;
   pointer-events: auto;
   text-decoration: none;
-}
-
-.navbar-toggler {
-  line-height: 1;
-  /* color: */
-  background-color: aqua;
-  /* border: */
-  /* border-radius:*/
-  /* transition: ; */
-}
-
-.navbar-toggler-icon {
-  color: blue;
-}
-
-.collapse {
-  /* transition: ; */
-}
-
-.navbar-collapse {
-  /* transition: ; */
 }
 
 .navbar-nav {
@@ -80,4 +59,62 @@
   height: 10%;
   position: relative;
   top: -20px;
+}
+.btn-hover {
+  height: 5.866666666666666vw;
+  height: 88px;
+  color: #a11212;
+}
+
+.btn-hover:hover {
+  border-bottom: 3px solid #0901ff;
+  color: #05ff01;
+  pointer-events: auto;
+  text-decoration: none;
+}
+.nav-link.active {
+  font-weight: 600;
+  border-bottom: 3px solid #ff0105;
+  color: #ffcc01 !important;
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+#root {
+  background: #37b720;
+  color: rgb(150, 25, 25);
+  font-family: "Orbitron", sans-serif;
+  border-radius: 10px;
+}
+
+/* .btn {
+  background: #066deb;
+  color: rgb(241, 237, 17);
+  padding: 5%;
+  border: 0px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  font-size: 25px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:focus {
+  background: rgb(64, 7, 7);
+  color: #ab0ddb;
+} */
+
+#header {
+  text-shadow: 2px 2px 4px #be0ae2;
+  letter-spacing: 2px;
+  text-align: right;
+  display: inline-block;
+  margin-left: 15px;
+  font-family: gi, sans-serif;
+  font-size: 100%;
+  font-weight: 700;
+  align-items: center;
+  margin-top: 60px;
 }

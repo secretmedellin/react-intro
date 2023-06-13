@@ -73,3 +73,11 @@
 .navbar-nav {
   background-color: aqua;
 }
+
+#logo-img {
+  display: block;
+  width: 65px;
+  height: 10%;
+  position: relative;
+  top: -20px;
+}

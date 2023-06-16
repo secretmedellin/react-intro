@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../Images/calles_logo.jpg";
+import Logo from "../Images/calles_logo.png";
 
 const Navbar = (props) => {
   const { setActiveMenu } = props;

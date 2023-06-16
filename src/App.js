@@ -17,7 +17,10 @@ function App() {
       <Navbar setActiveMenu={setActiveMenu} />
       <div className="container">
         <div className="row">
-          <div className="col-lg-8 col-md-6 col-sm-5 left-container">
+          <div
+            className="col-lg-8 col-md-6 col-sm-5 left-container"
+            id="container_color"
+          >
             {activeMenu === "Collections" && <Collections />}
             {activeMenu === "ComingSoon" && <ComingSoon />}
             {activeMenu === "AboutUs" && <AboutUs />}

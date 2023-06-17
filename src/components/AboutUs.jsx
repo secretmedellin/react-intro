@@ -6,7 +6,7 @@ const AboutUs = (props) => {
   };
   return (
     <div>
-      <h1>About our story</h1>
+      <h1>About our story hello</h1>
     </div>
   );
 };

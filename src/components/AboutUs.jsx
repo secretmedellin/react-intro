@@ -1,4 +1,6 @@
 import React from "react";
+import YouTubeVD from "./YouTube";
+import Collections from "./Collections";
 
 const AboutUs = (props) => {
   const onClickItem = () => {
@@ -6,7 +8,10 @@ const AboutUs = (props) => {
   };
   return (
     <div>
-      <h1>About our story hello good day</h1>
+      <h1>About Us title here</h1>
+      <p>you tube video below</p>
+      <Collections onClickItem={props.onClickItem} />
+      <YouTubeVD />
     </div>
   );
 };

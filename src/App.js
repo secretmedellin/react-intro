@@ -29,6 +29,12 @@ function App() {
             {activeMenu === "Tshirts" && <Tshirts />}
             {activeMenu === "Hats" && <Hats />}
           </div>
+          <div
+            className="col-lg-4 col-md-6 col-sm-7 right-container"
+            id="second_container_color"
+          >
+            <h1>hello</h1>
+          </div>
         </div>
       </div>
     </div>

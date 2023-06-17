@@ -8,7 +8,7 @@ const AboutUs = (props) => {
   };
   return (
     <div>
-      <h1>About Us title here</h1>
+      <h1>About Us title hello</h1>
       <p>you tube video below</p>
       <Collections onClickItem={props.onClickItem} />
       <YouTubeVD />

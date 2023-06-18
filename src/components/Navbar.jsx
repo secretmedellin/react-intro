@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Logo from "../Images/calles_logo.png";
 
 const Navbar = (props) => {
-  const { setActiveMenu } = props;
-  const [curActiveMenu, setCurActiveMenu] = useState("AboutUs");
+  const { setActiveMenu, curActiveMenu, setCurActiveMenu } = props;
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
@@ -65,7 +64,7 @@ const Navbar = (props) => {
               <button
                 id="navbarYe"
                 className={`nav-link btn-hover ${
-                  curActiveMenu === "LongSleves" ? "active" : ""
+                  curActiveMenu === "Hats" ? "active" : ""
                 }`}
                 onClick={() => {
                   setCurActiveMenu("Hats");
@@ -93,7 +92,7 @@ const Navbar = (props) => {
               <button
                 id="navbarYe"
                 className={`nav-link btn-hover ${
-                  curActiveMenu === "On-Sale" ? "active" : ""
+                  curActiveMenu === "OnSale" ? "active" : ""
                 }`}
                 onClick={() => {
                   setCurActiveMenu("OnSale");

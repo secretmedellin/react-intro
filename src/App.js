@@ -12,16 +12,26 @@ import Hats from "./components/Hats";
 
 function App() {
   const [activeMenu, setActiveMenu] = useState("AboutUs");
+  const [curActiveMenu, setCurActiveMenu] = useState("AboutUs");
   return (
     <div className="App">
-      <Navbar setActiveMenu={setActiveMenu} />
+      <Navbar
+        setActiveMenu={setActiveMenu}
+        curActiveMenu={curActiveMenu}
+        setCurActiveMenu={setCurActiveMenu}
+      />
       <div className="container">
         <div className="row">
           <div
             className="col-lg-8 col-md-6 col-sm-5 left-container"
             id="container_color"
           >
-            {activeMenu === "Collections" && <Collections />}
+            {activeMenu === "Collections" && (
+              <Collections
+                setActiveMenu={setActiveMenu}
+                setCurActiveMenu={setCurActiveMenu}
+              />
+            )}
             {activeMenu === "ComingSoon" && <ComingSoon />}
             {activeMenu === "AboutUs" && <AboutUs />}
             {activeMenu === "OnSale" && <OnSale />}

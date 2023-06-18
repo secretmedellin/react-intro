@@ -4,7 +4,6 @@ import pic_01 from "../Images/IMG_9033.jpg";
 import pic_02 from "../Images/IMG_9033.jpg";
 
 const Collections = (props) => {
-<<<<<<< HEAD
   <div>
     <h1>Collection</h1>
   </div>;
@@ -16,8 +15,7 @@ const Collections = (props) => {
   const onClickItem = (index, item) => {
     props.onClickItem(imgs[index].src);
   };
-  return <ImageCarousel imgs={imgs} onClickItem={onClickItem} />;
-=======
+  // return <ImageCarousel imgs={imgs} onClickItem={onClickItem} />;
   return (
     <div id="cards">
       <h1>Collection</h1>
@@ -87,7 +85,6 @@ const Collections = (props) => {
       </div>
     </div>
   );
->>>>>>> 23eef7a6ac74d281753d2602faaa53c3cc323d3c
 };
 
 export default Collections;

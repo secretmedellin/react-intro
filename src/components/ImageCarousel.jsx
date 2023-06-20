@@ -11,7 +11,12 @@ const ImageCarousel = (props) => {
       {imgs.map((img, index) => {
         return (
           <div key={index}>
-            <img src={img.src} alt="img.text" className="carousel-pic" />
+            <img
+              src={img.src}
+              alt="img.text"
+              id="carousel"
+              className="carousel-pic"
+            />
             {/* <p className="legend">{img.text}</p> */}
           </div>
         );

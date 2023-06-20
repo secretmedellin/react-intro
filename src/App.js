@@ -10,10 +10,22 @@ import Hoodies from "./components/Hoodies";
 import Tshirts from "./components/Tshirts";
 import Hats from "./components/Hats";
 import YouTubeVD from "./components/YouTube";
+import ImageModal from "./components/ImageModal";
 
 function App() {
   const [activeMenu, setActiveMenu] = useState("AboutUs");
   const [curActiveMenu, setCurActiveMenu] = useState("AboutUs");
+  const [selectedImgSrc, setSelectedImageSrc] = useState("");
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  const onClickItem = (imgSrc) => {
+    setSelectedImageSrc(imgSrc);
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
   return (
     <div className="App">
       <Navbar
@@ -39,6 +51,7 @@ function App() {
             {activeMenu === "Hoodies" && <Hoodies />}
             {activeMenu === "Tshirts" && <Tshirts />}
             {activeMenu === "Hats" && <Hats />}
+            <ComingSoon onClickItem={onClickItem} />
           </div>
           <div
             className="col-lg-4 col-md-6 col-sm-7 right-container"
@@ -47,6 +60,11 @@ function App() {
             <h1>hello</h1>
             <YouTubeVD />
           </div>
+          <ImageModal
+            imgSrc={selectedImgSrc}
+            modalIsOpen={modalIsOpen}
+            closeModal={closeModal}
+          />
         </div>
       </div>
     </div>

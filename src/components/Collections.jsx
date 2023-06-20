@@ -1,15 +1,15 @@
 import React from "react";
 // import ImageCarousel from "./ImageCarousel";
-import pic_01 from "../Images/IMG_9033.jpg";
-import pic_02 from "../Images/IMG_9033.jpg";
-import military from "../Images/military.jpg";
+import miami from "../Images/colle_miami.jpg";
+// import pic_02 from "../Images/.jpg";
+import military from "../Images/colle_military.jpg";
 
 const Collections = (props) => {
   const { setActiveMenu, setCurActiveMenu } = props;
   console.log("props: ", props);
   const imgs = [
-    { scr: pic_01, text: "calles" },
-    { scr: pic_02, text: "military hat" },
+    { scr: miami, text: "calles" },
+    { scr: military, text: "military hat" },
   ];
 
   // const onClickItem = (index, item) => {
@@ -24,7 +24,7 @@ const Collections = (props) => {
         <div className="row">
           <div className="col-3">
             <div className="card" style={{ width: "18rem" }}>
-              <img src={pic_01} className="card-img-top" alt="..." />
+              <img src={miami} className="card-img-top" alt="..." />
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">

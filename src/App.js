@@ -9,6 +9,7 @@ import OnSale from "./components/OnSale";
 import Hoodies from "./components/Hoodies";
 import Tshirts from "./components/Tshirts";
 import Hats from "./components/Hats";
+import YouTubeVD from "./components/YouTube";
 
 function App() {
   const [activeMenu, setActiveMenu] = useState("AboutUs");
@@ -44,6 +45,7 @@ function App() {
             id="second_container_color"
           >
             <h1>hello</h1>
+            <YouTubeVD />
           </div>
         </div>
       </div>

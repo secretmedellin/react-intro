@@ -6,6 +6,7 @@ import military from "../Images/military.jpg";
 
 const Collections = (props) => {
   const { setActiveMenu, setCurActiveMenu } = props;
+  console.log("props: ", props);
   const imgs = [
     { scr: pic_01, text: "calles" },
     { scr: pic_02, text: "military hat" },

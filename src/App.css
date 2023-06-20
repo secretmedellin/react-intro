@@ -43,7 +43,7 @@
 
 .navbar-brand {
   font-weight: 600;
-  border-bottom: 3px solid #b607d1;
+  /* border-bottom: 3px solid #b607d1; */
   color: #610ae3 !important;
   pointer-events: auto;
   text-decoration: none;
@@ -141,11 +141,10 @@
 }
 
 #second_container_color {
-  background-color: #d009da;
+  background-color: #e99bed;
   border-radius: 10px;
-  padding: 400px;
-  margin: 100px;
-  width: 10%;
+  margin-top: 100px;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;

@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar";
 import { useState } from "react";
-// import logo from "./logo.svg";
 import "./App.css";
 import Collections from "./components/Collections";
 import ComingSoon from "./components/ComingSoon";
@@ -9,7 +8,6 @@ import OnSale from "./components/OnSale";
 import Hoodies from "./components/Hoodies";
 import Tshirts from "./components/Tshirts";
 import Hats from "./components/Hats";
-import YouTubeVD from "./components/YouTube";
 import ImageModal from "./components/ImageModal";
 
 function App() {
@@ -45,20 +43,14 @@ function App() {
                 setCurActiveMenu={setCurActiveMenu}
               />
             )}
-            {activeMenu === "ComingSoon" && <ComingSoon />}
+            {activeMenu === "ComingSoon" && (
+              <ComingSoon onClickItem={onClickItem} />
+            )}
             {activeMenu === "AboutUs" && <AboutUs />}
             {activeMenu === "OnSale" && <OnSale />}
             {activeMenu === "Hoodies" && <Hoodies />}
             {activeMenu === "Tshirts" && <Tshirts />}
             {activeMenu === "Hats" && <Hats />}
-            <ComingSoon onClickItem={onClickItem} />
-          </div>
-          <div
-            className="col-lg-4 col-md-6 col-sm-7 right-container"
-            id="second_container_color"
-          >
-            <h1>hello</h1>
-            <YouTubeVD />
           </div>
           <ImageModal
             imgSrc={selectedImgSrc}

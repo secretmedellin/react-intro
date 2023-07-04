@@ -7,10 +7,6 @@ import military from "../Images/colle_military.jpg";
 const Collections = (props) => {
   const { setActiveMenu, setCurActiveMenu } = props;
   console.log("props: ", props);
-  const imgs = [
-    { scr: miami, text: "calles" },
-    { scr: military, text: "military hat" },
-  ];
 
   // const onClickItem = (index, item) => {
   //   props.onClickItem(imgs[index].src);

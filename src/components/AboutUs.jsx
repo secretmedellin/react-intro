@@ -4,9 +4,6 @@ import React from "react";
 import face from "../Images/face.jpg";
 
 const AboutUs = (props) => {
-  const onClickItem = () => {
-    props.onClickItem(props.item.id);
-  };
   return (
     <div>
       <h1>About Us title hello</h1>

@@ -6,9 +6,8 @@ import face from "../Images/face.jpg";
 const AboutUs = (props) => {
   return (
     <div>
-      <h1>About Us title hello</h1>
-      <p>you tube video below</p>
-      <img src={face} alt="face" />
+      <h1 id="titlecalles">CALLES DE MIAMI</h1>
+      <img src={face} alt="face" className="logoton" />
       {/* <Collections onClickItem={props.onClickItem} /> */}
       {/* <YouTubeVD /> */}
     </div>

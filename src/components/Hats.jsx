@@ -1,10 +1,10 @@
 import React from "react";
-import face from "../Images/face.jpg";
+import hats3 from "../Images/hats3.jpg";
 
 const LongSleves = (props) => {
   return (
     <div className="card" style={{ width: "18rem" }}>
-      <img src={face} className="card-img-top" alt="..." />
+      <img src={hats3} className="card-img-top" alt="..." />
       <div className="card-body">
         <h5 className="card-title">Card title</h5>
         <p className="card-text">

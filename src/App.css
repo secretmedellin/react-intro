@@ -119,3 +119,40 @@
 #titlecalles {
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  /* background-color: white; */
+  .ReactModal__Content {
+    width: 500px;
+    height: 500px;
+  }
+  .navbar {
+    height: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  #head1 {
+    font-size: 24px;
+  }
+
+  #logo-img {
+    top: -40px;
+  }
+
+  .nav-link {
+    height: 50px;
+  }
+
+  .selected-image {
+    width: 350px !important;
+    height: 280px !important;
+  }
+
+  .ReactModal__Content {
+    width: 95%;
+  }
+  .calcuHit {
+    margin-top: 10px;
+  }
+}
